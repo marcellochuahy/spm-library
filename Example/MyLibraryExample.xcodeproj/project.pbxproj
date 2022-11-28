@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		5F2884A1293543F900E1B9B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F28849F293543F900E1B9B0 /* Main.storyboard */; };
 		5F2884A32935440200E1B9B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F2884A22935440200E1B9B0 /* Assets.xcassets */; };
 		5F2884A62935440200E1B9B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2884A42935440200E1B9B0 /* LaunchScreen.storyboard */; };
+		5F2884B12935474500E1B9B0 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 5F2884B02935474500E1B9B0 /* MyLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F2884B12935474500E1B9B0 /* MyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = MyLibraryExample;
+			packageProductDependencies = (
+				5F2884B02935474500E1B9B0 /* MyLibrary */,
+			);
 			productName = MyLibraryExample;
 			productReference = 5F288496293543F900E1B9B0 /* MyLibraryExample.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = 5F28848D293543F900E1B9B0;
+			packageReferences = (
+				5F2884AF2935474500E1B9B0 /* XCRemoteSwiftPackageReference "spm-library" */,
+			);
 			productRefGroup = 5F288497293543F900E1B9B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F2884AF2935474500E1B9B0 /* XCRemoteSwiftPackageReference "spm-library" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marcellochuahy/spm-library";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5F2884B02935474500E1B9B0 /* MyLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F2884AF2935474500E1B9B0 /* XCRemoteSwiftPackageReference "spm-library" */;
+			productName = MyLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F28848E293543F900E1B9B0 /* Project object */;
 }
