@@ -7,15 +7,17 @@
 
 import Foundation
 
-class ExternalDependency {
+public class ExternalDependency {
     
-    static let shared = ExternalDependency()
+    public static let shared = ExternalDependency()
+    
+    public init() { }
    
 }
 
 extension ExternalDependency {
     
-    func getLabelText() -> String {
+    public func getLabelText() -> String {
         return "Hello, World!"
     }
     

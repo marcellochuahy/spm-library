@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MyLibrary
 
 class ViewController: UIViewController {
     
@@ -15,7 +16,10 @@ class ViewController: UIViewController {
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let labelText = ExternalDependency.shared.getLabelText()
+        
+        label.text = ""
     }
 
 
